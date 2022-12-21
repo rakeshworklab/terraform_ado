@@ -2,16 +2,18 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=2.46.0"
+      version = "~> 3.30.0"
     }
   }
 }
-
-# Configure the Microsoft Azure Provider
 provider "azurerm" {
-  features {}  
+  client_id                  = "9a137a74-927b-4842-bdd4-c1bdbcb812cf"
+  client_secret              = "tfI8Q~s_Et_Iy2JKze2wT6v3YeyeeRNiRB4B3cCd"
+  subscription_id            = "664b6097-19f2-42a3-be95-a4a6b4069f6b"
+  tenant_id                  = "0adb040b-ca22-4ca6-9447-ab7b049a22ff"
+  features {}
+  skip_provider_registration = true
 }
-
 terraform {
   backend "azurerm" {
     storage_account_name = "__terraformstorageaccount__"
