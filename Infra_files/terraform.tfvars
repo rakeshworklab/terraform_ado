@@ -1,5 +1,5 @@
-rgname = "NextOpsVideos"
-rglocation = "eastus"
+rgname = "sa1_test_eic_trainingRakesh"
+rglocation = "Southeastasia"
 prefix = "NextOps"
 vnet_cidr_prefix = "10.10.0.0/16"
 subnet1_cidr_prefix = "10.10.1.0/24"
